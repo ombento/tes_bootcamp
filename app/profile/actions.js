@@ -9,7 +9,7 @@ const allProfile = () => {
 
 }
 
-const createProfile = () => {
+const createProfile = (data) => {
   return {
     type: 'CREATE_PROFILE',
     payload: axios.post('http://10.0.3.2:8989/api/create_profile',data)
